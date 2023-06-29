@@ -189,11 +189,12 @@ button {
   background: var(--background-hero);
   max-width: 1440px;
   margin: 0 auto;
-  background-image: linear-gradient(
+  background-image: linear-gradient( 
+   
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(./images/people-office.jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -359,6 +360,30 @@ button {
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.link-card {
+  display: flex;
+  gap: 24px;
+}
+
+.team-link-card {
+}
+
+.team-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+  background-color: var(--color-iris);
+}
+
+.team-icon {
 }
 
 .team-list {
