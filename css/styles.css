@@ -450,9 +450,6 @@ button {
 .clients-item {
   width: 168px;
   height: 88px;
-
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link {
@@ -466,8 +463,8 @@ button {
   color: var(--lightslate);
   border: 1px solid var(--lightslate);
   border-radius: 4px;
-
-  transition: border-color;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
@@ -548,10 +545,10 @@ button {
 .link-card-footer {
   display: flex;
   gap: 16px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-footer:hover,
