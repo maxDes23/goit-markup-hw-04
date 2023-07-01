@@ -450,6 +450,9 @@ button {
 .clients-item {
   width: 168px;
   height: 88px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link {
@@ -545,10 +548,10 @@ button {
 .link-card-footer {
   display: flex;
   gap: 16px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-link.socials-footer {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.team-link {
 }
 
 .socials-footer:hover,
@@ -595,6 +598,11 @@ button {
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text:hover,
