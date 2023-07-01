@@ -517,6 +517,11 @@ button {
   line-height: 1.5;
 }
 
+.page-footer-link {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-container {
   margin-right: 120px;
 }
@@ -533,16 +538,17 @@ button {
 }
 
 .footer-link {
-  align-items: baseline;
 }
 
-.page-footer-link {
-  display: flex;
-}
+
 
 .link-card-footer {
   display: flex;
   gap: 16px;
+}
+
+.team-link {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-footer:hover,
@@ -582,6 +588,11 @@ button {
   background: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-text:hover,
@@ -597,6 +608,7 @@ button {
 
 .card-link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card {
@@ -612,7 +624,7 @@ button {
 
 .card-link:hover,
 .card-link:focus {
-  box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -663,9 +675,9 @@ button {
   letter-spacing: 0.32px;
   width: 100%;
   height: 100%;
-  padding: 32px 32px 164px 32px;
+  padding: 40px 32px;
   transform: translateY(100%);
-  transition: transform 250ms linear;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /**
@@ -682,6 +694,8 @@ button {
   height: 100%;
 
   background-color: var(--navyblue-modal);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -695,8 +709,6 @@ button {
   top: 50%;
   left: 50%;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -733,13 +745,9 @@ button {
 .modal-btn:focus {
   background-color: var(--ocean);
   border: none;
+  fill: var(--color-white);
 }
 
 .modal-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-icon:hover,
-.modal-icon:focus {
-  fill: var(--color-white);
 }
