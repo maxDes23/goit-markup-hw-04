@@ -655,6 +655,12 @@ button {
   line-height: 1.5;
 }
 
+/**
+  |============================
+  | Project Card
+  |============================
+*/
+
 .card-top-wrap {
   position: relative;
   width: 360px;
